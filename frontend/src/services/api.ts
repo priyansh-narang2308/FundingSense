@@ -100,3 +100,25 @@ export const getAllEvidence = async (userId?: string): Promise<EvidenceUsed[]> =
   if (!response.ok) throw new Error("Failed to fetch evidence");
   return response.json();
 };
+
+export const translateText = async (
+  text: string,
+  targetLanguage: string
+): Promise<string> => {
+  try {
+    const response = await fetch(`${API_BASE_URL}/translate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text, target_language: targetLanguage }),
+    });
+
+    if (!response.ok) return text;
+    const data = await response.json();
+    return data.translated_text || text;
+  } catch (error) {
+    console.error("Translation error:", error);
+    return text;
+  }
+};

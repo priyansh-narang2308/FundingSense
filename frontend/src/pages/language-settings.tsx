@@ -54,7 +54,7 @@ export default function LanguageSettings() {
 
   return (
     <DashboardLayout>
-      <motion.div 
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -72,7 +72,7 @@ export default function LanguageSettings() {
               </h1>
               <p className="text-muted-foreground flex items-center gap-2 font-medium">
                 <Sparkles className="w-4 h-4 text-primary" />
-                Customize your localized experience
+                {t("interface_desc")}
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function LanguageSettings() {
                 {t("interface_lang")}
               </h2>
             </div>
-            
+
             <RadioGroup
               value={uiLanguage}
               onValueChange={setUiLanguage as any}
@@ -120,9 +120,9 @@ export default function LanguageSettings() {
                     <p className="font-black text-foreground uppercase tracking-tighter text-sm">{lang.label}</p>
                     <p className="text-[10px] text-muted-foreground font-bold opacity-60">{lang.native}</p>
                   </div>
-                  
+
                   {uiLanguage === lang.value && (
-                    <motion.div 
+                    <motion.div
                       layoutId="choice-check"
                       className="absolute top-4 right-4 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-lg"
                     >
@@ -139,13 +139,13 @@ export default function LanguageSettings() {
             {/* Report Strategy Card */}
             <div className="bg-card border border-border/60 rounded-[2.5rem] p-8 space-y-8 shadow-sm relative overflow-hidden">
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
-              
+
               <div className="space-y-2 relative">
                 <h3 className="text-lg font-display font-bold text-foreground tracking-tight underline-offset-4 decoration-primary/30">
                   {t("report_lang")}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Set the default generation language for your deep analysis reports.
+                  {t("report_lang_selection_desc")}
                 </p>
               </div>
 
@@ -171,10 +171,10 @@ export default function LanguageSettings() {
               <div className="p-5 rounded-3xl bg-primary/5 border border-primary/10 space-y-3">
                 <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-widest">
                   <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  Localization Tech
+                  {t("localization_tech")}
                 </div>
                 <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
-                  Our RAG models automatically adapt evidence extraction to the selected cultural context and linguistic nuances.
+                  {t("localization_tech_desc")}
                 </p>
               </div>
             </div>
@@ -183,18 +183,18 @@ export default function LanguageSettings() {
             <div className="p-8 rounded-[2.5rem] bg-foreground text-background shadow-2xl relative overflow-hidden group hover:-translate-y-1 transition-transform">
               <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.05)_50%,transparent_75%)] bg-[length:250%_250%] animate-[shimmer_5s_infinite]" />
               <div className="relative space-y-3">
-                 <h4 className="font-black text-primary uppercase tracking-tighter text-lg">
-                  Did you know?
-                 </h4>
-                 <p className="text-xs text-background/70 leading-relaxed font-bold">
-                  Changing your UI language updates all navigation, error messages, and system insights instantly.
-                 </p>
+                <h4 className="font-black text-primary uppercase tracking-tighter text-lg">
+                  {t("did_you_know")}
+                </h4>
+                <p className="text-xs text-background/70 leading-relaxed font-bold">
+                  {t("did_you_know_desc")}
+                </p>
               </div>
             </div>
           </motion.div>
         </div>
       </motion.div>
-      
+
       <style>{`
         @keyframes shimmer {
           0% { background-position: -200% 0; }

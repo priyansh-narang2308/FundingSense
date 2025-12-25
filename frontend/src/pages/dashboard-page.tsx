@@ -29,7 +29,33 @@ export default function Dashboard() {
     { label: t("avg_fit_score"), value: "0%", icon: BarChart3 },
   ]);
   const [recentAnalyses, setRecentAnalyses] = useState<AnalysisResponse[]>([]);
+  const [translatedSummaries, setTranslatedSummaries] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
+
+  const translateSummaries = async (analyses: AnalysisResponse[]) => {
+    if (language === 'en') return;
+
+    const newTranslations: Record<string, string> = { ...translatedSummaries };
+    let hasNew = false;
+
+    await Promise.all(analyses.map(async (analysis) => {
+      // If summary is in English but UI is not, and we haven't translated it yet
+      if (!newTranslations[analysis.analysis_id]) {
+        try {
+          const { translateText } = await import("../services/api");
+          const translated = await translateText(analysis.startup_summary, language);
+          newTranslations[analysis.analysis_id] = translated;
+          hasNew = true;
+        } catch (e) {
+          console.error("Translation failed for", analysis.analysis_id, e);
+        }
+      }
+    }));
+
+    if (hasNew) {
+      setTranslatedSummaries(newTranslations);
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,6 +68,8 @@ export default function Dashboard() {
           getHistory(userId),
         ]);
 
+        const history = historyData.slice(-5).reverse();
+
         setStats([
           { label: t("analyses_run"), value: statsData.total_analyses.toString(), icon: Search },
           { label: t("investors_matched"), value: statsData.total_investors.toString(), icon: Users },
@@ -49,7 +77,8 @@ export default function Dashboard() {
           { label: t("avg_fit_score"), value: statsData.avg_score, icon: BarChart3 },
         ]);
 
-        setRecentAnalyses(historyData.slice(-5).reverse());
+        setRecentAnalyses(history);
+        await translateSummaries(history);
       } catch (error) {
         console.error("Failed to fetch dashboard data:", error);
       } finally {
@@ -58,7 +87,7 @@ export default function Dashboard() {
     };
 
     fetchData();
-  }, [language]); 
+  }, [language]);
 
   return (
     <DashboardLayout>
@@ -126,7 +155,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <h3 className="text-lg font-display font-semibold text-foreground mb-1">
-                    {t("evidence")} & {t("sources_used").split(" ")[0]} 
+                    {t("evidence")} & {t("sources_used").split(" ")[0]}
                   </h3>
                   <p className="text-muted-foreground text-sm">
                     {t("report_desc")}
@@ -144,7 +173,7 @@ export default function Dashboard() {
               <h2 className="text-lg font-display font-semibold text-foreground">
                 {t("recent_analysis")}
               </h2>
-              
+
             </div>
           </div>
           <div className="divide-y divide-border">
@@ -165,10 +194,12 @@ export default function Dashboard() {
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground">
-                        {analysis.startup_summary.length > 40 ? analysis.startup_summary.substring(0, 40) + "..." : analysis.startup_summary}
+                        {translatedSummaries[analysis.analysis_id]
+                          ? (translatedSummaries[analysis.analysis_id].length > 40 ? translatedSummaries[analysis.analysis_id].substring(0, 40) + "..." : translatedSummaries[analysis.analysis_id])
+                          : (analysis.startup_summary.length > 40 ? analysis.startup_summary.substring(0, 40) + "..." : analysis.startup_summary)}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
-                         {analysis.confidence_indicator} {t("confidence")}
+                      <p className="text-sm text-muted-foreground capitalize">
+                        {t(analysis.confidence_indicator)} {t("confidence")}
                       </p>
                     </div>
                   </div>
@@ -179,8 +210,8 @@ export default function Dashboard() {
                           analysis.confidence_indicator === "high"
                             ? "confidence-high"
                             : analysis.confidence_indicator === "medium"
-                            ? "confidence-medium"
-                            : "confidence-low"
+                              ? "confidence-medium"
+                              : "confidence-low"
                         }
                       >
                         {analysis.overall_score}% {t("fit_score").split(" ")[0]}
