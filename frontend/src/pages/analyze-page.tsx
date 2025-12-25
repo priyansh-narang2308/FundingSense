@@ -16,6 +16,7 @@ import { Label } from "../components/ui/label";
 import { Textarea } from "../components/ui/textarea";
 import { analyzeStartup } from "../services/api";
 import { LoadingModal } from "../components/LoadingModal";
+import { supabase } from "../utils/supabase";
 
 const sectors = [
   "Healthcare & Life Sciences",
@@ -87,6 +88,7 @@ export default function Analyze() {
     }
 
     setIsAnalyzing(true);
+    const { data: { user } } = await supabase.auth.getUser();
 
     try {
       const result = await analyzeStartup({
@@ -95,6 +97,7 @@ export default function Analyze() {
         funding_stage: stage,
         geography: geography,
         language: language,
+        user_id: user?.id,
       });
 
       localStorage.setItem("latestAnalysis", JSON.stringify(result));

@@ -8,6 +8,7 @@ export interface AnalysisRequest {
   funding_stage: string;
   geography: string;
   language: string;
+  user_id?: string;
 }
 
 export interface InvestorRecommendation {
@@ -29,6 +30,7 @@ export interface EvidenceUsed {
 
 export interface AnalysisResponse {
   analysis_id: string;
+  user_id?: string;
   startup_summary: string;
   confidence_indicator: "low" | "medium" | "high";
   overall_score: number;
@@ -68,28 +70,33 @@ export const analyzeStartup = async (
   return response.json();
 };
 
-export const getStats = async (): Promise<any> => {
-  const response = await fetch(`${API_BASE_URL}/stats`);
+export const getStats = async (userId?: string): Promise<any> => {
+  const url = userId ? `${API_BASE_URL}/stats?user_id=${userId}` : `${API_BASE_URL}/stats`;
+  const response = await fetch(url);
   if (!response.ok) throw new Error("Failed to fetch stats");
   return response.json();
 };
 
-export const getHistory = async (): Promise<AnalysisResponse[]> => {
-  const response = await fetch(`${API_BASE_URL}/history`);
+export const getHistory = async (userId?: string): Promise<AnalysisResponse[]> => {
+  const url = userId ? `${API_BASE_URL}/history?user_id=${userId}` : `${API_BASE_URL}/history`;
+  const response = await fetch(url);
   if (!response.ok) throw new Error("Failed to fetch history");
   return response.json();
 };
 
 export const getAnalysisById = async (
-  id: string
+  id: string,
+  userId?: string
 ): Promise<AnalysisResponse> => {
-  const response = await fetch(`${API_BASE_URL}/analyses/${id}`);
+  const url = userId ? `${API_BASE_URL}/analyses/${id}?user_id=${userId}` : `${API_BASE_URL}/analyses/${id}`;
+  const response = await fetch(url);
   if (!response.ok) throw new Error("Failed to fetch analysis");
   return response.json();
 };
 
-export const getAllEvidence = async (): Promise<EvidenceUsed[]> => {
-  const response = await fetch(`${API_BASE_URL}/evidence`);
+export const getAllEvidence = async (userId?: string): Promise<EvidenceUsed[]> => {
+  const url = userId ? `${API_BASE_URL}/evidence?user_id=${userId}` : `${API_BASE_URL}/evidence`;
+  const response = await fetch(url);
   if (!response.ok) throw new Error("Failed to fetch evidence");
   return response.json();
 };

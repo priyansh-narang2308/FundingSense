@@ -21,6 +21,7 @@ import {
 import { getAllEvidence } from "../services/api";
 import type { EvidenceUsed } from "../services/api";
 import { useLanguage } from "../contexts/LanguageContext";
+import { supabase } from "../utils/supabase";
 
 const typeIcons = {
   news: Newspaper,
@@ -41,7 +42,8 @@ export default function Evidence() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getAllEvidence();
+        const { data: { user } } = await supabase.auth.getUser();
+        const data = await getAllEvidence(user?.id);
         setEvidenceData(data);
       } catch (error) {
         console.error("Failed to fetch evidence:", error);

@@ -16,6 +16,7 @@ import {
 import { getStats, getHistory } from "../services/api";
 import type { AnalysisResponse } from "../services/api";
 import { useLanguage } from "../contexts/LanguageContext";
+import { supabase } from "../utils/supabase";
 
 import { formatRelativeTime } from "../lib/utils";
 
@@ -33,9 +34,12 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        const { data: { user } } = await supabase.auth.getUser();
+        const userId = user?.id;
+
         const [statsData, historyData] = await Promise.all([
-          getStats(),
-          getHistory(),
+          getStats(userId),
+          getHistory(userId),
         ]);
 
         setStats([
@@ -140,12 +144,7 @@ export default function Dashboard() {
               <h2 className="text-lg font-display font-semibold text-foreground">
                 {t("recent_analysis")}
               </h2>
-              <Link to="/analyze">
-                <Button variant="ghost" size="sm">
-                  {t("view_all")}
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
+              
             </div>
           </div>
           <div className="divide-y divide-border">

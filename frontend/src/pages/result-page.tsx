@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { getAnalysisById } from "../services/api";
 import { useLanguage } from "../contexts/LanguageContext";
+import { supabase } from "../utils/supabase";
 
 export default function Results() {
   const { t } = useLanguage();
@@ -37,7 +38,8 @@ export default function Results() {
       if (!id) return;
       
       try {
-        const analysis = await getAnalysisById(id);
+        const { data: { user } } = await supabase.auth.getUser();
+        const analysis = await getAnalysisById(id, user?.id);
         
         // Map backend response to the UI's expected format
         setData({

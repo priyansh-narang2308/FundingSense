@@ -42,8 +42,8 @@ export default function SignUp() {
 
       if (data.user) {
         toast({
-          title: "Sucessfully Signed Up",
-          description: "Login to get started.",
+          title: "Check your email for confirmation and then come back here",
+          description: "Check email",
         });
         navigate("/login");
       }

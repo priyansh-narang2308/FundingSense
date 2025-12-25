@@ -13,7 +13,7 @@ import {
 } from "../components/ui/select";
 import { Switch } from "../components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import { Globe, Bell, Shield, Save, User as UserIcon, LogOut } from "lucide-react";
+import { Globe, Bell, Save, User as UserIcon, LogOut } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 import { useLanguage } from "../contexts/LanguageContext";
 import { supabase } from "../utils/supabase";
@@ -116,15 +116,12 @@ export default function Settings() {
               Manage your account preferences and security
             </p>
           </div>
-          <Button variant="outline" className="text-destructive hover:bg-destructive/10" onClick={handleLogout}>
-            <LogOut className="w-4 h-4" />
-            {t("logout")}
-          </Button>
+       
         </div>
 
         {/* Tabs */}
         <Tabs defaultValue="profile" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 bg-muted/50 border border-border p-1 rounded-xl">
+          <TabsList className="grid w-full grid-cols-3 bg-muted/50 border border-border p-1 rounded-xl">
             <TabsTrigger value="profile" className="gap-2 rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
               <UserIcon className="w-4 h-4" />
               <span className="hidden sm:inline">Profile</span>
@@ -137,10 +134,7 @@ export default function Settings() {
               <Bell className="w-4 h-4" />
               <span className="hidden sm:inline">Alerts</span>
             </TabsTrigger>
-            <TabsTrigger value="security" className="gap-2 rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-              <Shield className="w-4 h-4" />
-              <span className="hidden sm:inline">Security</span>
-            </TabsTrigger>
+        
           </TabsList>
 
           {/* Profile Tab */}
@@ -293,45 +287,7 @@ export default function Settings() {
             </div>
           </TabsContent>
 
-          {/* Security Tab */}
-          <TabsContent value="security" className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-            <form onSubmit={handlePasswordUpdate}>
-              <div className="card-elevated p-6 space-y-6">
-                <div>
-                  <h2 className="text-lg font-display font-semibold text-foreground">
-                    Security Settings
-                  </h2>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Manage your account security and password
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="new-password">New Password</Label>
-                    <Input id="new-password" name="new-password" type="password" required className="bg-background/50" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="confirm-password">Confirm New Password</Label>
-                    <Input id="confirm-password" name="confirm-password" type="password" required className="bg-background/50" />
-                  </div>
-                </div>
-                <Button type="submit" variant="hero">
-                  <Shield className="w-4 h-4" />
-                  Update Password
-                </Button>
-              </div>
-            </form>
-
-            <div className="card-elevated p-6 border-destructive/20 bg-destructive/5">
-              <h3 className="font-display font-semibold text-destructive mb-2">
-                Danger Zone
-              </h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Permanently delete your account and all associated data. This action cannot be undone.
-              </p>
-              <Button variant="destructive" className="bg-destructive hover:bg-destructive/90">Delete Account</Button>
-            </div>
-          </TabsContent>
+  
         </Tabs>
       </div>
     </DashboardLayout>
