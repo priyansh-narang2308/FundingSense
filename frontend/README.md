@@ -1,73 +1,31 @@
-# React + TypeScript + Vite
+# FundingSense: Frontend (Client-Side)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React-based frontend for **FundingSense**, built with high-performance aesthetics and deep multilingual support.
 
-Currently, two official plugins are available:
+## 🚀 Key Technologies
+- **Vite & React 18**: Ultra-fast development and optimized production builds.
+- **TypeScript**: Type-safe development for complex state management.
+- **Tailwind CSS**: Utility-first CSS for responsive, modern design.
+- **Framer Motion**: Smooth micro-animations and page transitions (`motion/react`).
+- **Shadcn UI**: Premium component library built on Radix UI.
+- **Supabase**: Integrated authentication and user profile management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Multilingual System
+The frontend implements a custom `LanguageContext` that supports:
+- **8 Indian Languages**: English, Hindi, Bengali, Tamil, Telugu, Marathi, Gujarati, and Kannada.
+- **Dynamic AI Localizer**: Uses the backend's Gemini-powered translation engine to localize dynamic content like historical analysis summaries.
 
-## React Compiler
+## 🛠️ Project Structure
+- `src/contexts/`: Global state management for languages and themes.
+- `src/components/`: Reusable UI components (buttons, cards, layout).
+- `src/pages/`: Main application routes (Dashboard, Analyze, Evidence, Settings).
+- `src/services/api.ts`: Centralized API client for communicating with the FastAPI backend.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Development
+To run the frontend locally:
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+For the full setup instructions, please refer to the [Root README](../README.md).
