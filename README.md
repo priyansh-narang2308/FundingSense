@@ -107,20 +107,3 @@ FundingSense uses a modern, distributed architecture:
    npm run dev
    ```
 
----
-
-## 🗺️ Roadmap
-- [x] Gemini 2.0 Flash Integration
-- [x] Live Web Search Grounding
-- [x] Support for 8 Indian Languages
-- [x] AI-Powered Dynamic Translation
-- [ ] Direct Investor Outreach Integration
-- [ ] Financial Modeling Sandbox
-- [ ] Pitch Deck AI Auditor
-
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Built with ❤️ for the Startup Ecosystem.
