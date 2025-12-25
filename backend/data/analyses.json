@@ -1,0 +1,1624 @@
+[
+  {
+    "analysis_id": "391d0994-76bb-48ee-a019-8f536e3c38af",
+    "startup_summary": "Initial analysis performed across market, regulatory, and financial parameters.",
+    "confidence_indicator": "low",
+    "overall_score": 65,
+    "recommended_investors": [
+      {
+        "name": "General VC",
+        "fit_score": 50,
+        "logo_initials": null,
+        "focus_areas": [],
+        "reasons": [
+          "No specific investor matches found in current evidence."
+        ]
+      }
+    ],
+    "why_fits": [],
+    "why_does_not_fit": [
+      "Insufficient evidence for: High growth momentum in Healthcare & Life Sciences for the India - Pan India market",
+      "Insufficient evidence for: Favorable regulatory tailwinds for Healthcare & Life Sciences in India - Pan India",
+      "Insufficient evidence for: Predictable exit multiples for Seed in Healthcare & Life Sciences",
+      "Insufficient evidence for: Strong investor-thesis fit for Seed startups"
+    ],
+    "evidence_used": [],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 0,
+      "sector": "Healthcare & Life Sciences",
+      "stage": "Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "8e128bfd-ac8c-4cc4-899d-5ecba04856fa",
+    "startup_summary": "Initial analysis performed across market, regulatory, and financial parameters.",
+    "confidence_indicator": "high",
+    "overall_score": 75,
+    "recommended_investors": [
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 85,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Y Combinator",
+        "fit_score": 85,
+        "logo_initials": "YC",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "LetsVenture",
+        "fit_score": 85,
+        "logo_initials": "L",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 85,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Accel India",
+        "fit_score": 85,
+        "logo_initials": "AI",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Matrix Partners India",
+        "fit_score": 85,
+        "logo_initials": "MPI",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Kalaari Capital",
+        "fit_score": 85,
+        "logo_initials": "KC",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Lightspeed India",
+        "fit_score": 85,
+        "logo_initials": "LI",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "fit_score": 85,
+        "logo_initials": "NVP",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Quona Capital",
+        "fit_score": 85,
+        "logo_initials": "QC",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Inflection Point Ventures",
+        "fit_score": 85,
+        "logo_initials": "IPV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "fit_score": 85,
+        "logo_initials": "LVP",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Axilor Ventures",
+        "fit_score": 85,
+        "logo_initials": "AV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Endiya Partners",
+        "fit_score": 85,
+        "logo_initials": "EP",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "3one4 Capital",
+        "fit_score": 85,
+        "logo_initials": "3C",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Eximius Ventures",
+        "fit_score": 85,
+        "logo_initials": "EV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Kae Capital",
+        "fit_score": 85,
+        "logo_initials": "KC",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Speciale Invest",
+        "fit_score": 75,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Pi Ventures",
+        "fit_score": 75,
+        "logo_initials": "PV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Ankur Capital",
+        "fit_score": 75,
+        "logo_initials": "AC",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "IvyCap Ventures",
+        "fit_score": 75,
+        "logo_initials": "IV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Boundless Ventures",
+        "fit_score": 75,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      },
+      {
+        "name": "Capital A",
+        "fit_score": 75,
+        "logo_initials": "CA",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Healthcare & Life Sciences."
+        ]
+      }
+    ],
+    "why_fits": [
+      "High growth momentum in Healthcare & Life Sciences for the India - Pan India market",
+      "Predictable exit multiples for Pre-Seed in Healthcare & Life Sciences",
+      "Strong investor-thesis fit for Pre-Seed startups"
+    ],
+    "why_does_not_fit": [
+      "Insufficient evidence for: Favorable regulatory tailwinds for Healthcare & Life Sciences in India - Pan India"
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "valuation"
+      }
+    ],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 3,
+      "sector": "Healthcare & Life Sciences",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "5e2d7939-5f2d-4624-831a-2dff7789d08c",
+    "startup_summary": "Initial analysis performed across market, regulatory, and financial parameters.",
+    "confidence_indicator": "high",
+    "overall_score": 75,
+    "recommended_investors": [
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 85,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Y Combinator",
+        "fit_score": 85,
+        "logo_initials": "YC",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "LetsVenture",
+        "fit_score": 85,
+        "logo_initials": "L",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 85,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Accel India",
+        "fit_score": 85,
+        "logo_initials": "AI",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Matrix Partners India",
+        "fit_score": 85,
+        "logo_initials": "MPI",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Kalaari Capital",
+        "fit_score": 85,
+        "logo_initials": "KC",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Lightspeed India",
+        "fit_score": 85,
+        "logo_initials": "LI",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "fit_score": 85,
+        "logo_initials": "NVP",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Quona Capital",
+        "fit_score": 85,
+        "logo_initials": "QC",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Tracxn / YourStory Research regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Inflection Point Ventures",
+        "fit_score": 85,
+        "logo_initials": "IPV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "fit_score": 85,
+        "logo_initials": "LVP",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Axilor Ventures",
+        "fit_score": 85,
+        "logo_initials": "AV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Endiya Partners",
+        "fit_score": 85,
+        "logo_initials": "EP",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "3one4 Capital",
+        "fit_score": 85,
+        "logo_initials": "3C",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Eximius Ventures",
+        "fit_score": 85,
+        "logo_initials": "EV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Kae Capital",
+        "fit_score": 85,
+        "logo_initials": "KC",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Market Intelligence Report regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Speciale Invest",
+        "fit_score": 75,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Pi Ventures",
+        "fit_score": 75,
+        "logo_initials": "PV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Ankur Capital",
+        "fit_score": 75,
+        "logo_initials": "AC",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "IvyCap Ventures",
+        "fit_score": 75,
+        "logo_initials": "IV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Boundless Ventures",
+        "fit_score": 75,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      },
+      {
+        "name": "Capital A",
+        "fit_score": 75,
+        "logo_initials": "CA",
+        "focus_areas": [
+          "Deep Tech & AI",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Directly mentioned in Inc42 / GrowthJockey regarding Deep Tech & AI."
+        ]
+      }
+    ],
+    "why_fits": [
+      "High growth momentum in Deep Tech & AI for the India - Pan India market",
+      "Predictable exit multiples for Pre-Seed in Deep Tech & AI",
+      "Strong investor-thesis fit for Pre-Seed startups"
+    ],
+    "why_does_not_fit": [
+      "Insufficient evidence for: Favorable regulatory tailwinds for Deep Tech & AI in India - Pan India"
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "valuation"
+      }
+    ],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 3,
+      "sector": "Deep Tech & AI",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "e822c097-e7dc-469a-82d7-f87d271b0149",
+    "startup_summary": "The healthcare and life sciences sector in India presents a compelling investment opportunity, characterized by high growth momentum, favorable regulatory tailwinds, and predictable exit multiples for pre-seed investments. The Ayushman Bharat Digital Mission (ABDM) policy, coupled with increasing investor interest in AI-driven healthcare solutions for Tier 2 and Tier 3 cities, creates a favorable environment for early-stage ventures.",
+    "confidence_indicator": "high",
+    "overall_score": 100,
+    "recommended_investors": [
+      {
+        "name": "Inflection Point Ventures",
+        "fit_score": 90,
+        "logo_initials": "IPV",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "Early-Stage Investments",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Led a $700K seed round for Neuranics in the healthcare space.",
+          "Actively funding early-stage healthcare and life sciences startups in India."
+        ]
+      },
+      {
+        "name": "Endiya Partners",
+        "fit_score": 85,
+        "logo_initials": "EP",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "Early-Stage Investments",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Actively funding early-stage healthcare and life sciences startups in India."
+        ]
+      },
+      {
+        "name": "Eximius Ventures",
+        "fit_score": 80,
+        "logo_initials": "EV",
+        "focus_areas": [
+          "HealthTech",
+          "Pre-Seed",
+          "Seed",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Focusing on pre-seed and seed HealthTech investments in India."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 75,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "FinTech",
+          "SaaS",
+          "Healthcare & Life Sciences",
+          "Early-Stage Investments",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Announced 58 deals in 2024.",
+          "Active investor in both FinTech and Healthcare & Life Sciences.",
+          "Invests in early-stage Indian startups."
+        ]
+      },
+      {
+        "name": "Matrix Partners India",
+        "fit_score": 70,
+        "logo_initials": "MPI",
+        "focus_areas": [
+          "Healthcare & Life Sciences",
+          "Early-Stage Investments",
+          "India - Pan India"
+        ],
+        "reasons": [
+          "Active investor in Indian Healthcare & Life Sciences.",
+          "Focuses on early-stage ventures."
+        ]
+      }
+    ],
+    "why_fits": [
+      "High growth momentum in Healthcare & Life Sciences for the India - Pan India market",
+      "Favorable regulatory tailwinds for Healthcare & Life Sciences in India - Pan India",
+      "Predictable exit multiples for Pre-Seed in Healthcare & Life Sciences",
+      "Strong investor-thesis fit for Pre-Seed startups"
+    ],
+    "why_does_not_fit": [],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "valuation"
+      },
+      {
+        "source_type": "news",
+        "title": "Accel-backed healthtech startup StanPlus acquires emergency response platform LifeLine Technologies",
+        "source_name": "VCCircle",
+        "year": "2024",
+        "url": "https://www.vccircle.com/deals/2024/01/10/accel-backed-healthtech-startup-stanplus-acquires-emergency-response-platform-lifeline-technologies",
+        "usage_reason": "funding-trends"
+      },
+      {
+        "source_type": "policy",
+        "title": "National Digital Health Mission (NDHM) / Ayushman Bharat Digital Mission (ABDM)",
+        "source_name": "National Health Authority",
+        "year": "2020",
+        "url": "https://abdm.gov.in/",
+        "usage_reason": "regulation"
+      },
+      {
+        "source_type": "news",
+        "title": "Healthtech startup Redcliffe Labs raises $61 million in Series B round",
+        "source_name": "YourStory",
+        "year": "2024",
+        "url": "https://yourstory.com/2024/02/healthtech-startup-redcliffe-labs-raises-61-million-in-series-b-round",
+        "usage_reason": "funding-trends"
+      },
+      {
+        "source_type": "news",
+        "title": "NITI Aayog report highlights the potential of AI in healthcare",
+        "source_name": "The Economic Times",
+        "year": "2024",
+        "url": "https://economictimes.indiatimes.com/topic/niti-aayog",
+        "usage_reason": "policy-impact"
+      },
+      {
+        "source_type": "dataset",
+        "title": "National Health Profile (NHP) India",
+        "source_name": "Central Bureau of Health Intelligence (CBHI)",
+        "year": "2023",
+        "url": "https://cbhi.nic.in/index1.php?lang=1&level=1&sublinkid=111&lid=64",
+        "usage_reason": "market-sizing"
+      }
+    ],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 8,
+      "sector": "Healthcare & Life Sciences",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "ec9fccb0-6242-477e-b3c6-a1d4a84ac3c4",
+    "startup_summary": "Based on the provided evidence, the startup demonstrates a strong fit for pre-seed investment, particularly within the Indian Healthcare AI and Deep Tech sectors. While the evidence suggests general positive trends in these areas, claims of high growth momentum, favorable regulatory conditions, and predictable exit multiples are not supported, resulting in a low confidence level. There are multiple investors active in the pre-seed space in India across Healthcare, AI, and Deep Tech.",
+    "confidence_indicator": "low",
+    "overall_score": 25,
+    "recommended_investors": [
+      {
+        "name": "Eximius Ventures",
+        "fit_score": 90,
+        "logo_initials": "EV",
+        "focus_areas": [
+          "HealthTech",
+          "Pre-Seed",
+          "Seed"
+        ],
+        "reasons": [
+          "Focusing on pre-seed and seed HealthTech.",
+          "Active investor in the Indian market."
+        ]
+      },
+      {
+        "name": "Speciale Invest",
+        "fit_score": 85,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deep Tech",
+          "AI",
+          "Climate Tech",
+          "Space Tech",
+          "Seed"
+        ],
+        "reasons": [
+          "Premier seed-stage VC for deeptech, space-tech, and climate-tech in India.",
+          "Focuses on seed-stage investments.",
+          "Experience in funding AI-native startups."
+        ]
+      },
+      {
+        "name": "Inflection Point Ventures",
+        "fit_score": 80,
+        "logo_initials": "IPV",
+        "focus_areas": [
+          "Healthcare",
+          "Seed"
+        ],
+        "reasons": [
+          "Led a $700K seed round for Neuranics.",
+          "Active investor in the Indian market.",
+          "Invests in early-stage ventures."
+        ]
+      },
+      {
+        "name": "Endiya Partners",
+        "fit_score": 75,
+        "logo_initials": "EP",
+        "focus_areas": [
+          "Healthcare",
+          "Life Sciences",
+          "Early-Stage"
+        ],
+        "reasons": [
+          "Actively funding early-stage healthcare and lifesciences.",
+          "Focuses on Indian market.",
+          "Experience in early-stage investments."
+        ]
+      }
+    ],
+    "why_fits": [
+      "The startup aligns with the investor-thesis fit for Pre-Seed startups as supported by evidence.",
+      "Early-stage startups in Healthcare AI are receiving significant funding in India.",
+      "There are micro-VCs providing checks for rapid prototyping at pre-seed stage."
+    ],
+    "why_does_not_fit": [
+      "There is no strong evidence supporting high growth momentum specifically in Healthcare & Life Sciences for the India - Pan India market.",
+      "Favorable regulatory tailwinds for Healthcare & Life Sciences in India - Pan India is not validated by the evidence.",
+      "Predictable exit multiples for Pre-Seed in Healthcare & Life Sciences is not supported.",
+      "The provided funding analysis does not guarantee success and is based on limited data."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "news",
+        "title": "Southeast Asia EdTech Sector Sees 30% Growth in Seed Capital",
+        "source_name": "TechCrunch",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      }
+    ],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 5,
+      "sector": "Healthcare & Life Sciences",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "6f0eb11e-fe4c-4fd8-b64c-60436ab86d8a",
+    "startup_summary": "The analysis indicates a strong fit for pre-seed stage startups, particularly those leveraging AI. While there's significant funding activity in the Indian healthcare AI sector, the data refutes claims of high growth momentum, favorable regulatory tailwinds, and predictable exit multiples specifically within the healthcare and life sciences domain for pre-seed companies.",
+    "confidence_indicator": "low",
+    "overall_score": 25,
+    "recommended_investors": [
+      {
+        "name": "Eximius Ventures",
+        "fit_score": 90,
+        "logo_initials": "EV",
+        "focus_areas": [
+          "HealthTech",
+          "Pre-Seed",
+          "Seed"
+        ],
+        "reasons": [
+          "Focuses on pre-seed and seed HealthTech.",
+          "Actively investing in early-stage companies.",
+          "Demonstrated activity in the Indian healthcare market."
+        ]
+      },
+      {
+        "name": "Inflection Point Ventures",
+        "fit_score": 85,
+        "logo_initials": "IPV",
+        "focus_areas": [
+          "Healthcare",
+          "Early-Stage",
+          "Seed"
+        ],
+        "reasons": [
+          "Led a $700K seed round for Neuranics.",
+          "Actively investing in early-stage companies in India.",
+          "Demonstrated interest in healthcare and diagnostics startups."
+        ]
+      },
+      {
+        "name": "Speciale Invest",
+        "fit_score": 80,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deep Tech",
+          "AI",
+          "Seed",
+          "Climate-Tech",
+          "Space-Tech"
+        ],
+        "reasons": [
+          "Premier seed-stage VC for deeptech in India.",
+          "Focuses on AI-native startups.",
+          "Demonstrated interest in AI and deep tech sectors"
+        ]
+      },
+      {
+        "name": "Endiya Partners",
+        "fit_score": 75,
+        "logo_initials": "EP",
+        "focus_areas": [
+          "Healthcare",
+          "Life Sciences",
+          "Early-Stage"
+        ],
+        "reasons": [
+          "Actively funding early-stage healthcare and lifesciences.",
+          "Invests in companies in India.",
+          "Demonstrated activity in the Indian healthcare market."
+        ]
+      }
+    ],
+    "why_fits": [
+      "The evidence indicates a strong investor-thesis fit for Pre-Seed startups, as explicitly stated in the supported claims."
+    ],
+    "why_does_not_fit": [
+      "Claims of high growth momentum in Healthcare & Life Sciences for the India - Pan India market are not supported.",
+      "Claims of favorable regulatory tailwinds for Healthcare & Life Sciences in India - Pan India are not supported.",
+      "Claims of predictable exit multiples for Pre-Seed in Healthcare & Life Sciences are not supported."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "news",
+        "title": "Southeast Asia EdTech Sector Sees 30% Growth in Seed Capital",
+        "source_name": "TechCrunch",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      }
+    ],
+    "created_at": null,
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 5,
+      "sector": "Healthcare & Life Sciences",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India"
+    }
+  },
+  {
+    "analysis_id": "b3c6511c-1c53-40e0-9fd5-5e9e84eafa7f",
+    "startup_summary": "Based on the provided evidence, the startup exhibits a strong fit for Seed-stage investors, particularly those focused on deep tech and AI in India. However, there is insufficient support for claims related to high growth momentum in Financial Services & FinTech for the India - Tier 2/3 Cities market, favorable regulatory tailwinds in that specific sector/geography, and predictable exit multiples for Seed-stage FinTech startups. The analysis is based on limited evidence and the confidence level is low.",
+    "confidence_indicator": "low",
+    "overall_score": 25,
+    "recommended_investors": [
+      {
+        "name": "Speciale Invest",
+        "fit_score": 90,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deep Tech",
+          "Space-Tech",
+          "Climate-Tech"
+        ],
+        "reasons": [
+          "Premier seed-stage VC for deep tech in India.",
+          "Actively invests in AI-native startups."
+        ]
+      },
+      {
+        "name": "Pi Ventures",
+        "fit_score": 85,
+        "logo_initials": "PV",
+        "focus_areas": [
+          "Applied AI"
+        ],
+        "reasons": [
+          "Actively invests in applied AI startups.",
+          "Focuses on IP-led startups."
+        ]
+      },
+      {
+        "name": "Capital A",
+        "fit_score": 80,
+        "logo_initials": "CA",
+        "focus_areas": [
+          "Deep Tech"
+        ],
+        "reasons": [
+          "Launched Fund II targeting early-stage deep tech.",
+          "Actively invests in AI-native startups."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 70,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "FinTech",
+          "SaaS"
+        ],
+        "reasons": [
+          "Active early-stage investor in India.",
+          "Has a focus on FinTech and SaaS startups."
+        ]
+      }
+    ],
+    "why_fits": [
+      "The startup aligns with the thesis of Seed-stage investors in India.",
+      "Deep tech and AI sectors are attracting funding in India.",
+      "Valuation multiples for SaaS companies in India and Southeast Asia are commanding a premium, if they demonstrate local market dominance and positive unit economics."
+    ],
+    "why_does_not_fit": [
+      "Seed-stage FinTech deals have seen a decline as investors shift preference toward late-stage proven models.",
+      "There is no evidence provided supporting high growth momentum, regulatory tailwinds, or predictable exit multiples specifically for FinTech in Tier 2/3 cities in India."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "policy",
+        "title": "Digital Payment Framework Update 2024",
+        "source_name": "SEBI (Securities and Exchange Board of India)",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "policy"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      }
+    ],
+    "created_at": "2025-12-25T13:57:37.679654",
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 5,
+      "sector": "Financial Services & FinTech",
+      "stage": "Seed",
+      "geography": "India - Tier 2/3 Cities"
+    }
+  },
+  {
+    "analysis_id": "1d6a622b-978e-4ac5-907d-9b6ae3123ea2",
+    "startup_summary": "The funding analysis indicates active investor interest in the FinTech space in India, particularly in early-stage ventures, although seed funding has seen a recent decline. Deep tech and AI are also emerging as attractive sectors for investment. The analysis is based on a limited set of evidence, leading to low confidence.",
+    "confidence_indicator": "low",
+    "overall_score": 60,
+    "recommended_investors": [
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 85,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "FinTech",
+          "SaaS"
+        ],
+        "reasons": [
+          "Remains the most active lead investor in the Indian region.",
+          "Active in the FinTech sector in India.",
+          "Invests in early-stage ventures."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 80,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "FinTech",
+          "SaaS"
+        ],
+        "reasons": [
+          "Made 58 deals in 2024, heavily focused on FinTech and SaaS.",
+          "Active in the FinTech sector in India.",
+          "Invests in early-stage ventures."
+        ]
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "fit_score": 75,
+        "logo_initials": "NVP",
+        "focus_areas": [
+          "FinTech"
+        ],
+        "reasons": [
+          "Participated in a $25.5 million seed round for Zinc Money.",
+          "Active in the FinTech sector in India.",
+          "Invests in early-stage ventures."
+        ]
+      },
+      {
+        "name": "Speciale Invest",
+        "fit_score": 70,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deep Tech",
+          "AI"
+        ],
+        "reasons": [
+          "Premier seed-stage VC for deeptech in India.",
+          "May be interested in FinTech companies leveraging deep tech."
+        ]
+      }
+    ],
+    "why_fits": [
+      "Active investor interest in the FinTech space is observed.",
+      "The data indicates interest in early-stage ventures."
+    ],
+    "why_does_not_fit": [
+      "Market growth and demand for Financial Services & FinTech in India - Pan India was refuted.",
+      "Regulatory framework and policy support in India - Pan India was refuted.",
+      "Availability of Seed capital for Financial Services & FinTech startups was refuted.",
+      "Ecosystem maturity for Financial Services & FinTech startups in India - Pan India was refuted."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "policy",
+        "title": "Digital Payment Framework Update 2024",
+        "source_name": "SEBI (Securities and Exchange Board of India)",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "policy"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "news"
+      }
+    ],
+    "created_at": "2025-12-25T14:00:48.961197",
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 5,
+      "sector": "Financial Services & FinTech",
+      "stage": "Seed",
+      "geography": "India - Pan India",
+      "raw_support_ratio": 0.2
+    }
+  },
+  {
+    "analysis_id": "9ff99ea3-77f1-4fd8-9de3-288663aeac79",
+    "startup_summary": "Based on the provided evidence, there is validated active investor interest in the Indian AI and deep tech sectors. Specifically, funds like Speciale Invest, Pi Ventures, Ankur Capital, IvyCap Ventures, Boundless Ventures and Capital A are actively investing in early-stage deep tech and AI startups in India. Accel India and Sequoia India have also invested in the healthcare AI space. The extension of the Startup India tax holiday provides a favorable financial environment for early-stage startups with high R&D costs. However, broader market growth, regulatory support, seed capital availability, and ecosystem maturity claims for Financial Services & FinTech in India were rejected indicating they are not supported by the provided data.",
+    "confidence_indicator": "low",
+    "overall_score": 62,
+    "recommended_investors": [
+      {
+        "name": "Speciale Invest",
+        "fit_score": 90,
+        "logo_initials": "SI",
+        "focus_areas": [
+          "Deeptech",
+          "Space-tech",
+          "Climate-tech"
+        ],
+        "reasons": [
+          "Premier seed-stage VC for deeptech in India.",
+          "Focuses on early-stage investments which matches the startup's stage."
+        ]
+      },
+      {
+        "name": "Pi Ventures",
+        "fit_score": 85,
+        "logo_initials": "PV",
+        "focus_areas": [
+          "Applied AI",
+          "Deep Tech"
+        ],
+        "reasons": [
+          "Actively invests in applied AI and IP-led startups.",
+          "Matches the startup's technology focus."
+        ]
+      },
+      {
+        "name": "Capital A",
+        "fit_score": 80,
+        "logo_initials": "CA",
+        "focus_areas": [
+          "Deep Tech",
+          "AI"
+        ],
+        "reasons": [
+          "Launched Fund II targeting early-stage deep tech startups.",
+          "Provides early stage funding"
+        ]
+      },
+      {
+        "name": "Accel India",
+        "fit_score": 70,
+        "logo_initials": "AI",
+        "focus_areas": [
+          "AI",
+          "Healthcare"
+        ],
+        "reasons": [
+          "Demonstrated interest in investing in Indian AI (Healthcare AI)",
+          "Active investor in India."
+        ]
+      }
+    ],
+    "why_fits": [
+      "Active investor interest in the Indian AI and Deep Tech sectors.",
+      "Availability of funding for early-stage startups in AI and deep tech, particularly at the seed stage.",
+      "Government initiatives like the Startup India tax holiday extension provide financial benefits."
+    ],
+    "why_does_not_fit": [
+      "Lack of validated claims supporting market growth, regulatory support, seed capital availability, and ecosystem maturity for Financial Services & FinTech in India.",
+      "The focus of investor activity, as evidenced, is primarily on AI and deep tech, not specifically on FinTech (despite evidence of SEBI digital payment framework update)."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "policy",
+        "title": "Digital Payment Framework Update 2024",
+        "source_name": "SEBI (Securities and Exchange Board of India)",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "policy"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "Startup India Tax Holiday Extended for 2024",
+        "source_name": "Economic Times",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "news"
+      }
+    ],
+    "created_at": "2025-12-25T14:03:45.565751",
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 5,
+      "sector": "Financial Services & FinTech",
+      "stage": "Seed",
+      "geography": "India - Pan India",
+      "raw_support_ratio": 0.2
+    }
+  },
+  {
+    "analysis_id": "044a90cc-9bd1-4d26-aa45-84fc21f3d824",
+    "startup_summary": "The Indian FinTech sector presents a compelling investment landscape, particularly for early-stage ventures. Market growth and investor interest are strong, with a mature ecosystem supporting FinTech startups across India. While overall FinTech funding is robust, seed-stage deals have seen a decline, indicating a preference for more established models. This analysis identifies key investors active in the Indian FinTech space, aligning with the startup's profile and stage. Investment into AI applications into the Healthcare sector is growing, presenting a viable option for startups.",
+    "confidence_indicator": "high",
+    "overall_score": 81,
+    "recommended_investors": [
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 90,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "FinTech",
+          "Early-Stage Investments"
+        ],
+        "reasons": [
+          "Most active lead investor in the Indian FinTech region.",
+          "Active in Financial Services & FinTech in India - Pan India."
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 85,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "FinTech",
+          "SaaS",
+          "Early-Stage Investments"
+        ],
+        "reasons": [
+          "Heavy skew toward FinTech and SaaS.",
+          "Active investor in the Indian FinTech space.",
+          "Announced 58 deals in 2024"
+        ]
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "fit_score": 80,
+        "logo_initials": "NVP",
+        "focus_areas": [
+          "FinTech",
+          "Seed Stage"
+        ],
+        "reasons": [
+          "Recently participated in a $25.5 million seed round for Zinc Money.",
+          "Active in the Indian FinTech landscape."
+        ]
+      },
+      {
+        "name": "Accel India",
+        "fit_score": 75,
+        "logo_initials": "AI",
+        "focus_areas": [
+          "FinTech",
+          "Healthcare AI",
+          "Early Stage"
+        ],
+        "reasons": [
+          "Active investor in Healthcare AI in India.",
+          "Invests in early-stage startups."
+        ]
+      }
+    ],
+    "why_fits": [
+      "Market growth and demand for Financial Services & FinTech in India - Pan India.",
+      "Availability of Pre-Seed capital for Financial Services & FinTech startups.",
+      "Active investor interest and thesis alignment.",
+      "Ecosystem maturity for Financial Services & FinTech startups in India - Pan India."
+    ],
+    "why_does_not_fit": [
+      "There were no supported claims which refute the investment."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "Healthcare AI Funding Hits Record $2.3B in India",
+        "source_name": "Economic Times",
+        "year": "2023",
+        "url": "",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "policy",
+        "title": "Digital Payment Framework Update 2024",
+        "source_name": "SEBI (Securities and Exchange Board of India)",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "policy"
+      },
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "news"
+      },
+      {
+        "source_type": "dataset",
+        "title": "2024 SaaS Valuation Multiples by Region",
+        "source_name": "Crunchbase Global Insights",
+        "year": "2024",
+        "url": "",
+        "usage_reason": "dataset"
+      },
+      {
+        "source_type": "news",
+        "title": "India FinTech Funding & Venture Landscape 2024",
+        "source_name": "Tracxn / YourStory Research",
+        "year": "2024",
+        "url": "https://tracxn.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "news",
+        "title": "India Healthcare & HealthTech VC Landscape 2024",
+        "source_name": "Market Intelligence Report",
+        "year": "2024",
+        "url": "https://digitalhealthnews.com",
+        "usage_reason": "market-sizing"
+      },
+      {
+        "source_type": "dataset",
+        "title": "Deep Tech & AI Startup Funding India 2024",
+        "source_name": "Inc42 / GrowthJockey",
+        "year": "2024",
+        "url": "https://inc42.com",
+        "usage_reason": "valuation"
+      }
+    ],
+    "created_at": "2025-12-25T14:11:59.375974",
+    "metadata": {
+      "language": "en",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 8,
+      "sector": "Financial Services & FinTech",
+      "stage": "Pre-Seed",
+      "geography": "India - Pan India",
+      "raw_support_ratio": 0.8
+    }
+  }
+]
