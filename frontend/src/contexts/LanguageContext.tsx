@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { supabase } from "../utils/supabase";
 
 type Language = "en" | "hi" | "bn" | "ta" | "te" | "mr" | "gu" | "kn";
 
@@ -9,6 +10,7 @@ interface LanguageContextType {
 }
 
 const translations: Record<Language, Record<string, string>> = {
+  // ... (translations remain the same, truncated for brevity in this view but will be preserved in file)
   hi: {
     dashboard: "डैशबोर्ड",
     analyze: "विश्लेषण करें",
@@ -558,13 +560,38 @@ const translations: Record<Language, Record<string, string>> = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem("uiLanguage");
-    return (saved as Language) || "en";
-  });
+  const [language, setLanguageState] = useState<Language>("en");
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Sync language with current session
+    const syncLanguage = (user: any) => {
+      const currentUserId = user?.id || null;
+      setUserId(currentUserId);
+
+      const key = currentUserId ? `uiLanguage_${currentUserId}` : "uiLanguage_guest";
+      const saved = localStorage.getItem(key) || "en";
+      setLanguageState(saved as Language);
+    };
+
+    // Initial session check
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      syncLanguage(session?.user);
+    });
+
+    // Listen for auth state changes (login/logout)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      syncLanguage(session?.user);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
+    const key = userId ? `uiLanguage_${userId}` : "uiLanguage_guest";
+    localStorage.setItem(key, lang);
+    // We also update the general one for the landing page transition
     localStorage.setItem("uiLanguage", lang);
     document.documentElement.lang = lang;
   };
