@@ -30,3 +30,4 @@ __pycache__/
 *$py.class
 .venv/
 backend/.env
+backend/venv
