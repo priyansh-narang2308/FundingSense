@@ -25,18 +25,35 @@ export function LoadingModal({ isOpen }: { isOpen: boolean }) {
     }
 
     const interval = setInterval(() => {
-      setCurrentStep((prev) => {
-        if (prev < steps.length - 1) return prev + 1;
-        return prev;
-      });
       setProgress((prev) => {
-        if (prev < 98) return prev + Math.random() * 15;
-        return prev;
+        if (prev >= 98) return prev;
+
+        let increment = 0;
+        if (prev < 70) {
+          increment = Math.random() * 10 + 5; 
+        } else if (prev < 85) {
+          increment = Math.random() * 3 + 1;
+        } else if (prev < 92) {
+          increment = Math.random() * 0.8 + 0.2;
+        } else {
+          increment = 0.1; 
+        }
+
+        const next = prev + increment;
+        return next > 99 ? 99 : next;
       });
-    }, 800); // Faster, more natural progression
+
+      setCurrentStep((prev) => {
+        const targetStep = Math.min(
+          Math.floor((progress / 100) * steps.length),
+          steps.length - 1
+        );
+        return targetStep > prev ? targetStep : prev;
+      });
+    }, 400);
 
     return () => clearInterval(interval);
-  }, [isOpen]);
+  }, [isOpen, progress]);
 
   if (!isOpen) return null;
 
@@ -53,19 +70,18 @@ export function LoadingModal({ isOpen }: { isOpen: boolean }) {
 
         <div className="space-y-4">
           <Progress value={progress} className="h-2" />
-          
+
           <div className="space-y-3">
             {steps.map((step, idx) => {
               const Icon = step.icon;
               const isPast = idx < currentStep;
               const isCurrent = idx === currentStep;
-              
+
               return (
-                <div 
-                  key={step.id} 
-                  className={`flex items-center gap-3 transition-all duration-500 ${
-                    isCurrent ? "text-primary translate-x-1" : isPast ? "text-muted-foreground/60" : "text-muted-foreground/30"
-                  }`}
+                <div
+                  key={step.id}
+                  className={`flex items-center gap-3 transition-all duration-500 ${isCurrent ? "text-primary translate-x-1" : isPast ? "text-muted-foreground/60" : "text-muted-foreground/30"
+                    }`}
                 >
                   <Icon className={`w-5 h-5 ${isCurrent ? "animate-spin-slow" : ""}`} />
                   <span className={`text-sm font-medium ${isCurrent ? "font-semibold" : ""}`}>
