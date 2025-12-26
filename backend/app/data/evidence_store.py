@@ -13,7 +13,7 @@ class EvidenceStore:
 
             if settings.GOOGLE_API_KEY:
                 self.emb_fn = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
-                    api_key=settings.GOOGLE_API_KEY, model_name="text-multilingual-embedding-002"
+                    api_key=settings.GOOGLE_API_KEY, model_name="models/text-embedding-004"
                 )
             else:
                 self.emb_fn = embedding_functions.DefaultEmbeddingFunction()
@@ -83,6 +83,36 @@ class EvidenceStore:
 
         return evidence_units
 
-    def list_all_evidence(self) -> List[EvidenceUnit]:
+    def list_all_evidence(self, limit: int = 100) -> List[EvidenceUnit]:
+        """
+        Retrieves a broad sample of ingested evidence from the vector store.
+        """
+        results = self.collection.get(limit=limit)
 
-        return []
+        evidence_units = []
+        if not results["ids"]:
+            return []
+
+        for i in range(len(results["ids"])):
+            meta = results["metadatas"][i]
+            evidence_units.append(
+                EvidenceUnit(
+                    evidence_id=results["ids"][i],
+                    source_type=SourceType(meta.get("source_type", "news")),
+                    title=meta.get("title", "Untitled"),
+                    source_name=meta.get("source_name", "Ingested Intelligence"),
+                    published_year=int(meta.get("published_year", 2024)),
+                    url=meta.get("url"),
+                    sector=meta.get("sector", "General"),
+                    geography=meta.get("geography", "Global"),
+                    investors=(
+                        meta.get("investors", "").split(",")
+                        if meta.get("investors")
+                        else []
+                    ),
+                    content=results["documents"][i],
+                    usage_tags=["ingested"]
+                )
+            )
+
+        return evidence_units

@@ -93,13 +93,18 @@ async def translate_text(
     generator: Generator = Depends(Generator)
 ):
     
-    # Dynamic AI translation layer to localize any text on the fly.
     
     translated = await generator.translate(request.text, request.target_language)
     return {"translated_text": translated}
+@router.get("/intelligence", response_model=List[Dict])
+async def get_intelligence_library():
+    
+    
+    return storage.get_intelligence_library()
+
+
 @router.get("/chat/history", response_model=List[Dict])
 async def get_chat_history(user_id: str):
     
-    # Fetch persistent chat history for a specific user.
     
     return storage.get_chat_history(user_id)

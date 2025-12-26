@@ -115,5 +115,11 @@ class Storage:
 
         return all_ev
 
+    def get_intelligence_library(self) -> List[Dict]:
+        from app.data.evidence_store import EvidenceStore
+        store = EvidenceStore()
+        all_units = store.list_all_evidence(limit=50)
+        return [u.model_dump() for u in all_units]
+
 
 storage = Storage()
