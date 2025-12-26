@@ -9,7 +9,9 @@ from app.config.settings import settings
 class EvidenceStore:
     def __init__(self, persist_directory: str = "db"):
         try:
-            self.client = chromadb.PersistentClient(path=persist_directory)
+            # Use absolute path for ChromaDB to prevent Rust slice errors in some environments
+            abs_persist_path = os.path.abspath(persist_directory)
+            self.client = chromadb.PersistentClient(path=abs_persist_path)
 
             if settings.GOOGLE_API_KEY:
                 self.emb_fn = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
@@ -43,7 +45,7 @@ class EvidenceStore:
         if evidence.investors:
             metadata["investors"] = ",".join(evidence.investors)
 
-        self.collection.add(
+        self.collection.upsert(
             ids=[evidence.evidence_id],
             documents=[evidence.content],
             metadatas=[metadata],
@@ -61,13 +63,19 @@ class EvidenceStore:
 
         for i in range(len(results["ids"][0])):
             meta = results["metadatas"][0][i]
+            
+            # Robust mapping for source_type enum
+            raw_type = meta.get("source_type", "news").lower()
+            if raw_type not in [s.value for s in SourceType]:
+                raw_type = "news"
+
             evidence_units.append(
                 EvidenceUnit(
                     evidence_id=results["ids"][0][i],
-                    source_type=SourceType(meta.get("source_type", "news")),
+                    source_type=SourceType(raw_type),
                     title=meta.get("title", "Untitled"),
                     source_name=meta.get("source_name", "Unknown"),
-                    published_year=int(meta.get("published_year", 2024)),
+                    published_year=int(meta.get("published_year") or 2024),
                     url=meta.get("url"),
                     sector=meta.get("sector", "General"),
                     geography=meta.get("geography", "Global"),
@@ -87,32 +95,46 @@ class EvidenceStore:
         """
         Retrieves a broad sample of ingested evidence from the vector store.
         """
-        results = self.collection.get(limit=limit)
+        try:
+            results = self.collection.get(limit=limit)
+        except Exception as e:
+            print(f"[!] ChromaDB get error: {e}")
+            return []
 
         evidence_units = []
-        if not results["ids"]:
+        if not results or not results["ids"]:
             return []
 
         for i in range(len(results["ids"])):
-            meta = results["metadatas"][i]
-            evidence_units.append(
-                EvidenceUnit(
-                    evidence_id=results["ids"][i],
-                    source_type=SourceType(meta.get("source_type", "news")),
-                    title=meta.get("title", "Untitled"),
-                    source_name=meta.get("source_name", "Ingested Intelligence"),
-                    published_year=int(meta.get("published_year", 2024)),
-                    url=meta.get("url"),
-                    sector=meta.get("sector", "General"),
-                    geography=meta.get("geography", "Global"),
-                    investors=(
-                        meta.get("investors", "").split(",")
-                        if meta.get("investors")
-                        else []
-                    ),
-                    content=results["documents"][i],
-                    usage_tags=["ingested"]
+            meta = results["metadatas"][i] or {}
+            
+            # Robust mapping for source_type enum
+            raw_type = str(meta.get("source_type", "news")).lower()
+            if raw_type not in [s.value for s in SourceType]:
+                raw_type = "news"
+
+            try:
+                evidence_units.append(
+                    EvidenceUnit(
+                        evidence_id=results["ids"][i],
+                        source_type=SourceType(raw_type),
+                        title=meta.get("title", "Untitled"),
+                        source_name=meta.get("source_name", "Ingested Intelligence"),
+                        published_year=int(meta.get("published_year") or 2024),
+                        url=meta.get("url"),
+                        sector=meta.get("sector", "General"),
+                        geography=meta.get("geography", "Global"),
+                        investors=(
+                            meta.get("investors", "").split(",")
+                            if meta.get("investors")
+                            else []
+                        ),
+                        content=results["documents"][i],
+                        usage_tags=["ingested"]
+                    )
                 )
-            )
+            except Exception as e:
+                print(f"    [!] Mapping error for evidence unit {results['ids'][i]}: {e}")
+                continue
 
         return evidence_units

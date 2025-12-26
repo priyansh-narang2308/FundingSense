@@ -98,8 +98,6 @@ async def translate_text(
     return {"translated_text": translated}
 @router.get("/intelligence", response_model=List[Dict])
 async def get_intelligence_library():
-    
-    
     return storage.get_intelligence_library()
 
 
