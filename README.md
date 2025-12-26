@@ -1,102 +1,118 @@
-# FundingSense: The AI-Driven Funding Intelligence Platform
+# FundingSense: The Ultimate AI Venture Intelligence Suite
 
-**FundingSense** is a state-of-the-art, evidence-backed decision intelligence platform designed to bridge the gap between startups and investors. By leveraging a sophisticated **Retriever-Augmented Generation (RAG)** pipeline and **Google Gemini 2.0 Flash**, it provides founders with deep, verifiable insights into their funding readiness.
+**FundingSense** is a state-of-the-art, evidence-backed decision intelligence platform designed to bridge the data gap between startups and investors. By combining a sophisticated **Reasoning & Safety Layer** with **Google Gemini 2.0 Flash**, it provides founders with deep, verifiable insights into their funding readiness, grounded in real-world policy, news, and market data.
+
+---
+
+## Vision & Purpose
+In the fast-moving venture ecosystem, information asymmetry is a major hurdle. Founders often lack clarity on how they fit into a VC’s thesis, and traditional AI tools suffer from "hallucinations" or stale data. 
+
+**FundingSense** solves this by:
+1.  **Eliminating Hallucinations**: Every claim is strictly validated against retrieved evidence.
+2.  **Bharat-First Localization**: Full support for English + 7 major Indian languages.
+3.  **Real-Time Intelligence**: Live Google Search grounding ensures you see what's happening *today*, not two years ago.
+
+---
+
+## Core AI Innovations
+
+### 1. The Reasoning & Safety Layer (Factual Integrity)
+Unlike standard RAG apps, FundingSense implements a **tri-stage validation pipeline**:
+-   **Step 1: Contextual Intent Detection**: The AI breaks down the user description into specific market, regulatory, and financial pillars.
+-   **Step 2: Evidence-Backed Validation**: A dedicated `Validator` engine maps retrieved facts to specific claims. If a claim isn't supported by hard data, it's flagged as "Unsupported."
+-   **Step 3: Grounded Explanation**: Gemini 2.0 generates the final report using *only* the validated evidence list.
+
+### 2. Hybrid Retrieval Architecture
+Our `Retriever` module uses three tiers of intelligence:
+-   **Grounded Search**: Live web access via Gemini 2.0 Flash (v1beta) to crawl 2024-2025 news.
+-   **Local Vector DB**: ChromaDB indexes proprietary investment thesis documents and datasets.
+-   **High-Fidelity PDF/MD Ingestion**: Automated chunking and metadata extraction from policy whitepapers and news reports.
+
+---
 
 ## Key Features
 
-### Real-World Evidence Retrieval (Live Web Search)
-Unlike traditional AI tools that rely on stale training data, FundingSense uses **Gemini 2.0 Web Search Grounding**. It crawls 2024-2025 news, policy documents, and venture databases in real-time to find:
-- Actual active investors (Peak XV, Blume, Accel, etc.).
-- Recent funding rounds and market trends.
-- Up-to-date government policies and regulatory changes.
+### 📊 Professional Funding Fit Analysis
+*   **Fit Score & Confidence**: A proprietary blended score (0-100) based on investor alignment and evidence strength.
+*   **Why This Fits/Doesn't Fit**: Detailed reasoning sections explaining the logical gap between the startup and current VC sentiment.
+*   **Recommended Investors**: Direct matching with top-tier VCs like **Peak XV**, **Blume**, **Accel**, and **Elevation Capital**.
 
-### Bharat-First Multilingual UI
-FundingSense is built for the diverse Indian startup ecosystem, supporting **English + 7 major Indian languages**:
-- **Hindi (हिंदी)**, **Bengali (বাংলা)**, **Tamil (தமிழ்)**, **Telugu (తెలుగు)**, **Marathi (मराठी)**, **Gujarati (ગુજરાતી)**, and **Kannada (ಕನ್ನಡ)**.
-- **Dynamic AI Translation**: Historical summaries and real-time insights are automatically translated into your preferred language using our custom-built AI translation engine.
+### 💬 Personal VC Lead (Chat Engine)
+*   **Interactive Context**: Chat with the AI about your specific analysis. The AI remembers your startup profile and the evidence used.
+*   **Translation-Aware Expansion**: Ask questions in Hindi or Bengali; the AI expands them into English venture-queries for global retrieval before answering in your native tongue.
 
-### Deep Funding Fit Analysis
-- **Fit Score & Confidence**: Proprietary scoring algorithm that calculates the alignment between your startup and current market sentiment.
-- **Why This Fits/Does Not Fit**: Bulleted, evidence-backed reasons explaining the AI's reasoning.
-- **Recommended Investors**: A curated list of 3-5 VCs with specific reasons for their match.
+### 📚 The Intelligence Vault & PDF Ingestion
+*   **Full PDF Support**: Upload policy documents, research whitepapers, or market datasets.
+*   **Source Traceability**: Every analysis includes an "Evidence Used" section with direct URLs and titles, ensuring full accountability.
 
-### Evidence Vault
-Every analysis is backed by an "Evidence Vault" containing:
-- **News articles** with direct URLs.
-- **Policy documents** and datasets.
-- **Usage Tags** explaining exactly how each piece of data influenced your report.
-
----
-
-## Architecture & Tech Stack
-
-FundingSense uses a modern, distributed architecture:
-
-### Frontend
-- **Framework**: React 18 with Vite
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS & Vanilla CSS (Fluid UI)
-- **Animations**: Framer Motion (motion/react)
-- **Components**: Shadcn UI & Lucide Icons
-- **Auth**: Supabase Auth
-- **State**: React Context API (Language & UI state)
-
-### Backend
-- **Framework**: FastAPI (Python 3.10+)
-- **Brain**: Google Gemini 2.0 Flash (`google-genai` SDK)
-- **Vector DB**: ChromaDB for local document retrieval
-- **Orchestrator**: Custom RAG pipeline that handles Evidence Retrieval -> Validation -> Report Generation
-- **Validation**: Pydantic for strict schema enforcement
+### 🇮🇳 Multilingual Intelligence
+Full UI and report support for:
+-   **English**
+-   **Hindi (हिंदी)**
+-   **Bengali (বাংলা)**
+-   **Tamil (தமிழ்)**
+-   **Telugu (తెలుగు)**
+-   **Marathi (मराठी)**
+-   **Gujarati (ગુજરાતી)**
+-   **Kannada (ಕನ್ನಡ)**
 
 ---
 
-## Getting Started
+## Technical Architecture
+
+### Tech Stack
+-   **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Framer Motion (premium aesthetics).
+-   **Backend**: FastAPI (Async Python), Pydantic (Schema Enforcement), ChromaDB (Vector Search).
+-   **AI**: Google Gemini 2.0 Flash (v1beta with Google Search Grounding).
+-   **Auth**: Supabase Authentication.
+
+### Project Structure
+```bash
+├── backend/
+│   ├── app/
+│   │   ├── core/           # Orchestration & Storage
+│   │   ├── rag/            # Retrieval Engine (ChromaDB + Gemini Search)
+│   │   ├── reasoning/      # Decision Validation Layer
+│   │   ├── generation/     # Report & Chat Generation
+│   │   └── data/           # Evidence Stores
+│   └── ingest_to_db.py     # High-fidelity PDF/Markdown Ingestor
+├── frontend/
+│   ├── src/
+│   │   ├── pages/          # Analysis, Results, Chat, Evidence Vault
+│   │   ├── components/     # Shadcn-based UI Components
+│   │   └── contexts/       # i18n & Global State Management
+```
+
+---
+
+## Setup & Installation
 
 ### Prerequisites
-- Python 3.10+
-- Node.js 18+
-- Google Gemini API Key
+-   Python 3.10+
+-   Node.js 18+
+-   Google GenAI API Key (Gemini 2.0 Flash)
+-   Supabase Project URL/Key
 
-### Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Mac/Linux
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Create a `.env` file from `.env.example`:
-   ```bash
-   GOOGLE_API_KEY=your_gemini_key_here
-   ```
-5. Run the FastAPI server:
-   ```bash
-   uvicorn app.main:app --reload
-   ```
+### 1. Backend Setup
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env  # Add your GOOGLE_API_KEY
+uvicorn app.main:app --reload
+```
 
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Set environment variables in `.env`:
-   ```bash
-   VITE_API_URL=http://localhost:8000/api/v1
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_key
-   ```
-4. Start the dev server:
-   ```bash
-   npm run dev
-   ```
+### 2. Ingest Data (Optional)
+Place your own PDFs or Markdown files in `backend/data/raw` and run:
+```bash
+python ingest_to_db.py
+```
 
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+cp .env.example .env  # Add Supabase & API URL
+npm run dev
+```
