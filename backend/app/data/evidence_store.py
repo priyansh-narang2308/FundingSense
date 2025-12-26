@@ -13,7 +13,7 @@ class EvidenceStore:
 
             if settings.GOOGLE_API_KEY:
                 self.emb_fn = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
-                    api_key=settings.GOOGLE_API_KEY, model_name="models/embedding-001"
+                    api_key=settings.GOOGLE_API_KEY, model_name="text-multilingual-embedding-002"
                 )
             else:
                 self.emb_fn = embedding_functions.DefaultEmbeddingFunction()

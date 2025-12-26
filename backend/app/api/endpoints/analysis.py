@@ -1,7 +1,9 @@
 from fastapi import APIRouter, HTTPException, Depends
 from typing import List, Dict
 from app.schemas.analysis import AnalysisRequest, AnalysisResponse, TranslationRequest
+from app.schemas.chat import ChatRequest, ChatResponse
 from app.core.orchestrator import AnalysisOrchestrator
+from app.core.chat_orchestrator import ChatOrchestrator
 from app.generation.generator import Generator
 from app.core.storage import storage
 
@@ -54,13 +56,50 @@ async def get_all_evidence(user_id: str = None):
     return storage.get_all_evidence(user_id)
 
 
+@router.post("/chat", response_model=ChatResponse)
+async def chat_with_ai(
+    request: ChatRequest,
+    orchestrator: ChatOrchestrator = Depends(ChatOrchestrator)
+):
+    
+    #Multilingual Q&A endpoint for deep-diving into funding insights.
+    
+    try:
+        response = await orchestrator.handle_chat(request)
+        
+        if request.user_id:
+            storage.save_chat_message(request.user_id, {
+                "role": "user",
+                "content": request.message,
+                "created_at": None 
+            })
+            storage.save_chat_message(request.user_id, {
+                "role": "assistant",
+                "content": response.answer,
+                "sources": [s.model_dump() for s in response.sources] if response.sources else [],
+                "created_at": None
+            })
+            
+        return response
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.post("/translate")
 async def translate_text(
     request: TranslationRequest,
     generator: Generator = Depends(Generator)
 ):
-    """
-    Dynamic AI translation layer to localize any text on the fly.
-    """
+    
+    # Dynamic AI translation layer to localize any text on the fly.
+    
     translated = await generator.translate(request.text, request.target_language)
     return {"translated_text": translated}
+@router.get("/chat/history", response_model=List[Dict])
+async def get_chat_history(user_id: str):
+    
+    # Fetch persistent chat history for a specific user.
+    
+    return storage.get_chat_history(user_id)

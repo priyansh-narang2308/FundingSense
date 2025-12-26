@@ -2305,5 +2305,299 @@
       "geography": "India - Metro Cities",
       "raw_support_ratio": 0.4
     }
+  },
+  {
+    "analysis_id": "5279a403-d001-4f83-8d30-83342624a9b1",
+    "user_id": "d1912531-4684-4ea7-b3b4-9ba6382bcb71",
+    "startup_summary": "This analysis assesses the investment landscape for a FinTech startup in India's metro cities. While there's active investor interest, particularly in AI and wealth management, and the ecosystem shows maturity, concerns remain about broad market growth and regulatory uncertainties. Focused investment strategies and understanding of the evolving regulatory environment are crucial.",
+    "confidence_indicator": "low",
+    "overall_score": 61,
+    "recommended_investors": [
+      {
+        "name": "Accel",
+        "fit_score": 85,
+        "logo_initials": "A",
+        "focus_areas": [
+          "FinTech",
+          "AI",
+          "Wealth Management",
+          "FinTech Infrastructure"
+        ],
+        "reasons": [
+          "Accel has raised a $650 million fund specifically for Indian fintech, AI, consumer, and manufacturing startups (ev_gen_1_7235391033546380960).",
+          "Their focus on wealth management companies and fintech infrastructure aligns well with potential investment opportunities in the sector (ev_gen_1_7235391033546380960)."
+        ]
+      },
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 75,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "FinTech",
+          "Seed Funding",
+          "Venture Capital"
+        ],
+        "reasons": [
+          "Peak XV is identified as one of the top investors in FinTech startups in India, actively participating in seed-stage funding (ev_gen_3_2991913477666995727).",
+          "Their presence in the Indian FinTech funding landscape demonstrates a strong commitment to the sector."
+        ]
+      },
+      {
+        "name": "AngelList",
+        "fit_score": 70,
+        "logo_initials": "A",
+        "focus_areas": [
+          "FinTech",
+          "Seed Funding",
+          "Early-Stage Investments"
+        ],
+        "reasons": [
+          "AngelList is recognized as a top investor in Indian FinTech startups, particularly at the seed stage (ev_gen_3_2991913477666995727).",
+          "Their focus on early-stage investments makes them a suitable partner for emerging FinTech ventures."
+        ]
+      },
+      {
+        "name": "LetsVenture",
+        "fit_score": 65,
+        "logo_initials": "L",
+        "focus_areas": [
+          "FinTech",
+          "Venture Capital",
+          "Startup Investments"
+        ],
+        "reasons": [
+          "LetsVenture is listed among the top investors in FinTech startups in India, indicating their active participation in the market (ev_gen_3_2991913477666995727).",
+          "Their presence alongside other prominent investors suggests a robust network and deal flow."
+        ]
+      }
+    ],
+    "why_fits": [
+      "The Indian FinTech sector demonstrates active investor interest, with Accel raising a $650 million fund targeting FinTech startups in India (ev_gen_1_7235391033546380960).",
+      "Accel's investment thesis aligns with wealth management companies and FinTech infrastructure, indicating a specific area of interest for investment (ev_gen_1_7235391033546380960).",
+      "Evidence suggests that several investors are actively involved, with Peak XV, Angel List, and LetsVenture identified as top investors in H1 2025, indicating a dynamic funding environment (ev_gen_3_2991913477666995727).",
+      "The FinTech ecosystem in India's metro cities is the third-largest globally, suggesting a mature environment for FinTech startups (ev_gen_5_7696380965452572545).",
+      "Bengaluru and Mumbai lead in FinTech funding, representing 55% and 14% respectively, highlighting key hubs within the ecosystem (ev_gen_3_2991913477666995727)."
+    ],
+    "why_does_not_fit": [
+      "While the FinTech market is projected to grow significantly, the rejected claim of guaranteed market growth and demand suggests potential variability and risk in achieving these projections.",
+      "The regulatory landscape is evolving, with the RBI issuing self-regulatory frameworks, indicating potential compliance challenges and uncertainties (ev_gen_0_401571443895181299, ev_gen_5_7696380965452572545, ev_gen_6_8951981945808283753).",
+      "The DPDP Act introduces compliance requirements for data handling, which could pose operational challenges for FinTech startups (ev_gen_4_4726888863098415541).",
+      "Although seed funding is available, as indicated by $91.2M raised in H1 2025, the rejection of the 'Availability of Seed capital' claim indicates that it is likely not abundant and is thus competitive (ev_gen_3_2991913477666995727)."
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "Fintech Laws and Regulations 2025 | India",
+        "source_name": "Global Legal Insights",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAZuj9UGBsrN72E_uwNQlkvawHEiHThzVkmplu2m0qRnzxIB_XgL-_yYoef3eTb1gEj4KWVIel6sA8S1wBQ1ZsQ1LxR-qXIJOZW_mKvFogHmPSDmRCNo9UidWAZlzdw-XVOMVSDD_O8Q3ztqz_V4ZWSxcmX2fdNkohjt7FMH1zwGS7kmJlxVQEXG2ymGYxGuH8",
+        "usage_reason": "regulatory compliance"
+      },
+      {
+        "source_type": "news",
+        "title": "Accel's $650 mn India fund to focus on AI, fintech startups, manufacturing",
+        "source_name": "Start Ups",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5gzJYLYFQxta71_flmhHDhaBDKnAM3-YhRdcKSltDYxKtQVh8rka4JVx4vDhzhdk_eMI8ag6GYK5pZks9LsCd8dzd0-n8BxTL6hcjZUPDwvuz7Cme-o8qlJAAqTXhtb8Ca4Ik60Loy6_8a1ItSgOlLDrYfk43fybWe9UzDsZ85FS-Nv4L35CqRjVT3C5YjV2Lvt1iGDC0SU6tJ6wfhtGQ2mOdROHTxHNq1alsz_8G2_Moj0W9z7YfT8jkIQVbxPdmAj-AhCr_LCQohw==",
+        "usage_reason": "seed funding"
+      },
+      {
+        "source_type": "news",
+        "title": "India Ai in Fintech Market Size, Share, Growth Forecast 2033 - IMARC Group",
+        "source_name": "IMARC Group",
+        "year": "2024",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaswyKnrDjX_ToReX21ZzQpqtn6udHIoK-_ju-idwkZzokkckpUAZDYY0OWdQaGNftqJwd02vhsKYZRoGkcxiBHeQH5vgNMc297AJSXVdNOhuMDjJAgCXhSz-ZWeo3_xVGsYf3skStovMS-vH__8-G",
+        "usage_reason": "AI in fintech"
+      },
+      {
+        "source_type": "news",
+        "title": "India Ranks 3rd Globally in FinTech Startup Funding, Raising $889M in H1 2025",
+        "source_name": "Tracxn",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyxccOF9K3FD1VDX01_qgkNhbBvbQZZMDBtkh4fMGvitdgw7SMcvJwbBLihtZnBd3xyFo0pvRVrMNVIrzxeFonzEpn3g0HhVkSvINt8uK7M5Zr6fD6JfznSBIaH3a0xcgdihLCF32bYa2bNSL_-KTgBpQKWG0J11jcIeUvOTzxgMqqFAFUEpr4ZVYNoLWYx-w=",
+        "usage_reason": "fintech funding"
+      },
+      {
+        "source_type": "policy",
+        "title": "DPDP Act 2025: Key Compliance for Businesses in India",
+        "source_name": "SprintVerify",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOHkZLSpI-64BzByHSp09jTWGE2FPPsRjxl0YU4GSQPp569aQqcWZ9ov30KQPt7Xhs7Ja-Wnx955J5Y2V6EF6ZF2zEHOAUb-FdwOpyeLF6EJapfrF5YaKlW3iuZbAV8ye5hEIz2fveB-8USg2jl0nZ4O00c9su5dzqoxcS1_udZ8U=",
+        "usage_reason": "DPDP Act"
+      },
+      {
+        "source_type": "news",
+        "title": "Fintech Laws and Regulations Report 2025 India",
+        "source_name": "ICLG.com",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7LogCfw9jqPa6Su4bKU5_LEtJMQOKI6wPLBPq0jP99FuCLGN_rpAsR2G6tAz6db616f83fSr7GV5FPxrgzxY32gxDg4H5J00TJJXYp2iuDjXa4Alv-_SJ49jJeAOw3kBGB6ADQY83Nhs0qyQlS9s4lryW9zpbB7pV5c6vrQ==",
+        "usage_reason": "fintech industry"
+      },
+      {
+        "source_type": "policy",
+        "title": "RBI's Guidelines on Fintech Lending: Compliance and Innovation in India",
+        "source_name": "Quatro Hive",
+        "year": "2024",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET1xHijBudfi6o8cqFxQLIdoWrgJXCTW1hFi6Qtec-iZuHeSrRA0mftA4fq0ZJjZswT2sNcWSq0DCZarTLLVtQAwTzOzqMxD4YTvcDFcEcDju8QpPFmstWz7ZuaTVA83lBkjc8rMQGj_2FCTxss6nITO_iz3h8KxxBsd_t9jNPT2QuNx9MMh_8Lmeaby_UqsU3QbPpZusz9w==",
+        "usage_reason": "fintech lending"
+      }
+    ],
+    "created_at": "2025-12-26T04:23:52.295382Z",
+    "metadata": {
+      "language": "hi",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 7,
+      "sector": "Financial Services & FinTech",
+      "stage": "Seed",
+      "geography": "India - Metro Cities",
+      "raw_support_ratio": 0.4
+    }
+  },
+  {
+    "analysis_id": "82a96b70-cb94-4640-87b0-d6c67d9645be",
+    "user_id": "d1912531-4684-4ea7-b3b4-9ba6382bcb71",
+    "startup_summary": "\u092f\u0939 \u0935\u093f\u0936\u094d\u0932\u0947\u0937\u0923 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0938\u0947\u0935\u093e \u0914\u0930 \u092b\u093f\u0928\u091f\u0947\u0915 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u0915\u0947 \u0932\u093f\u090f \u092b\u0902\u0921\u093f\u0902\u0917 \u0915\u0947 \u0905\u0935\u0938\u0930\u094b\u0902 \u0915\u093e \u092e\u0942\u0932\u094d\u092f\u093e\u0902\u0915\u0928 \u0915\u0930\u0924\u093e \u0939\u0948, \u091c\u094b \u0921\u0940\u092a\u0940\u092a\u0940\u090f \u0905\u0927\u093f\u0928\u093f\u092f\u092e \u0914\u0930 \u0935\u093f\u0928\u093f\u092f\u092e\u0928 \u0938\u0947 \u092a\u094d\u0930\u0947\u0930\u093f\u0924 \u0939\u0948\u0964 Accel \u091c\u0948\u0938\u0947 \u0928\u093f\u0935\u0947\u0936\u0915 \u0938\u0915\u094d\u0930\u093f\u092f \u0930\u0942\u092a \u0938\u0947 \u0907\u0938 \u0938\u094d\u0925\u093e\u0928 \u092a\u0930 \u0928\u093f\u0935\u0947\u0936 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902, \u0935\u093f\u0936\u0947\u0937 \u0930\u0942\u092a \u0938\u0947 \u090f\u0906\u0908, \u0927\u0928 \u092a\u094d\u0930\u092c\u0902\u0927\u0928 \u0914\u0930 \u0905\u0928\u0941\u092a\u093e\u0932\u0928 \u0938\u094d\u0935\u091a\u093e\u0932\u0928 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902\u0964 \u0939\u093e\u0932\u093e\u0902\u0915\u093f, \u092c\u093e\u091c\u093e\u0930 \u0915\u0940 \u0935\u0943\u0926\u094d\u0927\u093f, \u0928\u093f\u092f\u093e\u092e\u0915 \u0938\u092e\u0930\u094d\u0925\u0928 \u0914\u0930 \u0936\u094d\u0930\u0943\u0902\u0916\u0932\u093e \u0938\u0940 + \u092a\u0942\u0902\u091c\u0940 \u0915\u0940 \u0909\u092a\u0932\u092c\u094d\u0927\u0924\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0905\u0928\u093f\u0936\u094d\u091a\u093f\u0924\u0924\u093e \u0939\u0948\u0964",
+    "confidence_indicator": "low",
+    "overall_score": 64,
+    "recommended_investors": [
+      {
+        "name": "Accel",
+        "fit_score": 90,
+        "logo_initials": "A",
+        "focus_areas": [
+          "AI",
+          "FinTech",
+          "Wealth Management",
+          "Digital Distribution",
+          "Compliance Automation"
+        ],
+        "reasons": [
+          "Accel \u0928\u0947 \u092b\u093f\u0928\u091f\u0947\u0915 \u0914\u0930 AI \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u092a\u0930 \u0927\u094d\u092f\u093e\u0928 \u0915\u0947\u0902\u0926\u094d\u0930\u093f\u0924 \u0915\u0930\u0924\u0947 \u0939\u0941\u090f $650 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u093e \u092d\u093e\u0930\u0924 \u092b\u0902\u0921 \u0932\u0949\u0928\u094d\u091a \u0915\u093f\u092f\u093e \u0939\u0948 (2025)\u0964",
+          "\u0935\u0947\u0932\u094d\u0925 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f, \u092b\u093f\u0928\u091f\u0947\u0915 \u0907\u0902\u092b\u094d\u0930\u093e\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930 \u0914\u0930 \u0921\u093f\u091c\u093f\u091f\u0932 \u0921\u093f\u0938\u094d\u091f\u094d\u0930\u0940\u092c\u094d\u092f\u0942\u0936\u0928 \u092a\u0930 \u0915\u0947\u0902\u0926\u094d\u0930\u093f\u0924 \u0939\u0948\u0964",
+          "PowerUp Money \u0915\u0947 $12 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u0947 \u092b\u0902\u0921\u093f\u0902\u0917 \u0930\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u092d\u093e\u0917 \u0932\u093f\u092f\u093e\u0964"
+        ]
+      },
+      {
+        "name": "Peak XV Partners",
+        "fit_score": 85,
+        "logo_initials": "PXP",
+        "focus_areas": [
+          "FinTech",
+          "WealthTech",
+          "Early-Stage Investments",
+          "India"
+        ],
+        "reasons": [
+          "PowerUp Money \u0915\u0947 $12 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u0947 \u092b\u0902\u0921\u093f\u0902\u0917 \u0930\u093e\u0909\u0902\u0921 \u0915\u093e \u0928\u0947\u0924\u0943\u0924\u094d\u0935 \u0915\u093f\u092f\u093e, \u091c\u094b \u0936\u0941\u0930\u0941\u0906\u0924\u0940 \u091a\u0930\u0923 \u0915\u0947 \u0935\u0947\u0932\u094d\u0925\u091f\u0947\u0915 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u093e \u0938\u0902\u0915\u0947\u0924 \u0926\u0947\u0924\u093e \u0939\u0948\u0964",
+          "\u092d\u093e\u0930\u0924\u0940\u092f \u092c\u093e\u091c\u093e\u0930 \u092e\u0947\u0902 \u0938\u0915\u094d\u0930\u093f\u092f \u0928\u093f\u0935\u0947\u0936\u0915\u0964"
+        ]
+      },
+      {
+        "name": "Blume Ventures",
+        "fit_score": 75,
+        "logo_initials": "BV",
+        "focus_areas": [
+          "Early-Stage Investments",
+          "India",
+          "FinTech"
+        ],
+        "reasons": [
+          "PowerUp Money \u0915\u0947 $12 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u0947 \u092b\u0902\u0921\u093f\u0902\u0917 \u0930\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u092d\u093e\u0917 \u0932\u093f\u092f\u093e, \u091c\u094b \u0936\u0941\u0930\u0941\u0906\u0924\u0940 \u091a\u0930\u0923 \u0915\u0947 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u093e \u0938\u0902\u0915\u0947\u0924 \u0926\u0947\u0924\u093e \u0939\u0948\u0964",
+          "\u092d\u093e\u0930\u0924\u0940\u092f \u092c\u093e\u091c\u093e\u0930 \u092e\u0947\u0902 \u0938\u0915\u094d\u0930\u093f\u092f \u0928\u093f\u0935\u0947\u0936\u0915\u0964"
+        ]
+      },
+      {
+        "name": "Kae Capital",
+        "fit_score": 70,
+        "logo_initials": "KC",
+        "focus_areas": [
+          "Early-Stage Investments",
+          "India",
+          "FinTech"
+        ],
+        "reasons": [
+          "PowerUp Money \u0915\u0947 $12 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u0947 \u092b\u0902\u0921\u093f\u0902\u0917 \u0930\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u092d\u093e\u0917 \u0932\u093f\u092f\u093e, \u091c\u094b \u0936\u0941\u0930\u0941\u0906\u0924\u0940 \u091a\u0930\u0923 \u0915\u0947 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u093e \u0938\u0902\u0915\u0947\u0924 \u0926\u0947\u0924\u093e \u0939\u0948\u0964",
+          "\u092d\u093e\u0930\u0924\u0940\u092f \u092c\u093e\u091c\u093e\u0930 \u092e\u0947\u0902 \u0938\u0915\u094d\u0930\u093f\u092f \u0928\u093f\u0935\u0947\u0936\u0915\u0964"
+        ]
+      }
+    ],
+    "why_fits": [
+      "Accel \u0928\u0947 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 AI \u0914\u0930 \u092b\u093f\u0928\u091f\u0947\u0915 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u092a\u0930 \u0927\u094d\u092f\u093e\u0928 \u0915\u0947\u0902\u0926\u094d\u0930\u093f\u0924 \u0915\u0930\u0924\u0947 \u0939\u0941\u090f $650 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u093e \u092b\u0902\u0921 \u0932\u0949\u0928\u094d\u091a \u0915\u093f\u092f\u093e \u0939\u0948 (2025)\u0964 \u0935\u0947 \u0935\u093f\u0936\u0947\u0937 \u0930\u0942\u092a \u0938\u0947 \u0935\u0947\u0932\u094d\u0925 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f, \u092b\u093f\u0928\u091f\u0947\u0915 \u0907\u0902\u092b\u094d\u0930\u093e\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930 \u0914\u0930 \u0921\u093f\u091c\u093f\u091f\u0932 \u0921\u093f\u0938\u094d\u091f\u094d\u0930\u0940\u092c\u094d\u092f\u0942\u0936\u0928 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u0915\u094b \u0932\u0915\u094d\u0937\u093f\u0924 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964",
+      "Peak XV Partners \u0928\u0947 Accel \u0914\u0930 Blume Ventures \u0915\u0947 \u0938\u093e\u0925 PowerUp Money \u092e\u0947\u0902 $12 \u092e\u093f\u0932\u093f\u092f\u0928 \u0915\u0947 \u0930\u093e\u0909\u0902\u0921 \u0915\u093e \u0928\u0947\u0924\u0943\u0924\u094d\u0935 \u0915\u093f\u092f\u093e, \u091c\u094b \u0915\u093f \u090f\u0915 \u0935\u0947\u0932\u094d\u0925\u091f\u0947\u0915 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u0939\u0948, \u091c\u094b \u092a\u094d\u0930\u093e\u0930\u0902\u092d\u093f\u0915 \u091a\u0930\u0923 \u0915\u0947 \u0935\u093f\u0924\u094d\u0924\u092a\u094b\u0937\u0923 \u0915\u093e \u0938\u0902\u0915\u0947\u0924 \u0926\u0947\u0924\u093e \u0939\u0948\u0964",
+      "Acccel \u0935\u093f\u0936\u0947\u0937 \u0930\u0942\u092a \u0938\u0947 AI \u0915\u094b \u0935\u0930\u094d\u091f\u093f\u0915\u0932-\u0935\u093f\u0936\u093f\u0937\u094d\u091f \u0905\u0928\u0941\u092a\u094d\u0930\u092f\u094b\u0917\u094b\u0902 \u0914\u0930 \u092c\u0947\u0939\u0924\u0930 \u0938\u094d\u0935\u091a\u093e\u0932\u0928 \u0915\u0940 \u092a\u0947\u0936\u0915\u0936 \u0915\u0930\u0928\u0947 \u0935\u093e\u0932\u0940 \u0915\u0902\u092a\u0928\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u090f\u0915\u0940\u0915\u0943\u0924 \u0915\u0930\u0928\u0947 \u0935\u093e\u0932\u0940 \u0915\u0902\u092a\u0928\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u093e \u0939\u0948\u0964"
+    ],
+    "why_does_not_fit": [
+      "\u0910\u0938\u0947 \u0905\u0938\u094d\u0935\u0940\u0915\u0943\u0924 \u0926\u093e\u0935\u0947 \u0939\u0948\u0902 \u091c\u094b \u0938\u0941\u091d\u093e\u0935 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902 \u0915\u093f \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0938\u0947\u0935\u093e \u0914\u0930 \u092b\u093f\u0928\u091f\u0947\u0915 \u0915\u0947 \u0932\u093f\u090f \u092c\u093e\u091c\u093e\u0930 \u0915\u0940 \u0935\u0943\u0926\u094d\u0927\u093f \u0914\u0930 \u092e\u093e\u0902\u0917 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0905\u0928\u093f\u0936\u094d\u091a\u093f\u0924\u0924\u093e\u090f\u0902 \u0939\u0948\u0902\u0964",
+      "\u092a\u094d\u0930\u092e\u093e\u0923\u094b\u0902 \u0938\u0947 \u092a\u0924\u093e \u091a\u0932\u0924\u093e \u0939\u0948 \u0915\u093f \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0938\u0947\u0935\u093e \u0914\u0930 \u092b\u093f\u0928\u091f\u0947\u0915 \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0905\u092a \u0915\u0947 \u0932\u093f\u090f \u0936\u094d\u0930\u0943\u0902\u0916\u0932\u093e \u0938\u0940 + \u092a\u0942\u0902\u091c\u0940 \u0915\u0940 \u0909\u092a\u0932\u092c\u094d\u0927\u0924\u093e \u092a\u0930 \u0905\u0928\u093f\u0936\u094d\u091a\u093f\u0924\u0924\u093e \u0939\u0948\u0964",
+      "\u0939\u093e\u0932\u093e\u0902\u0915\u093f DPDP \u0905\u0927\u093f\u0928\u093f\u092f\u092e \u092e\u094c\u091c\u0942\u0926 \u0939\u0948, \u0928\u093f\u092f\u093e\u092e\u0915 \u0922\u093e\u0902\u091a\u0947 \u0914\u0930 \u0928\u0940\u0924\u093f \u0938\u092e\u0930\u094d\u0925\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0930\u094d\u092f\u093e\u092a\u094d\u0924 \u0938\u092e\u0930\u094d\u0925\u0928 \u0915\u093e \u0905\u092d\u093e\u0935 \u0939\u0948\u0964"
+    ],
+    "evidence_used": [
+      {
+        "source_type": "news",
+        "title": "Accel's $650 mn India fund to focus on AI, fintech startups, manufacturing",
+        "source_name": "Start Ups",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwhn4QJ__QFebAeWJ_zsIdwNpUjqYC4Erdv9qfaKBY42_eVcNYsoVy3JRk9oDY49aKT0jH_nsFadP03rxPEQQLD3TS_HZiz5edgT57-TefbGXZft0zgyA96TSW0ULv-5LavZnqqV0yWFXNO9vomXpMo6C5HZzvmA39o4raVadK_zhlfBKAMkzlrWUtZ8uWNt9ixE-Th_gpn9XLwQUci3_yq1bft-YzgV4Z91YG2CYt9uyrDw_ty04G7AWfYALuZw-tlTA6gcvIauVS0A==",
+        "usage_reason": "funding"
+      },
+      {
+        "source_type": "news",
+        "title": "US VC Accel unveils $650m fund to invest in Indian start-ups",
+        "source_name": "FinTech Futures",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPLoxqkKMP4k9CnwV31erwI5C1m5dEL9LB7EB1ipv_5lKRxPcY5A5qdCT6KoEfFghn4fFcFxDNlecKRfBXscLBOSjrgzTnelgj6d9MFI0NiM_2JX6kDyTYEbmbGPauHOZDde9quP0Tzg1TL4XstaoOHHM3e_bxfIxgtSN8A6NHOyiTZ7ZSTrI6dnMnUcUyDEG8gUk9elzh3vobegYxhPFP7Qeq0ZdHAyrmd6u9MQ==",
+        "usage_reason": "funding"
+      },
+      {
+        "source_type": "news",
+        "title": "DPDP Act and 2025 rules: Recasting privacy, governance, accountability in the digital age",
+        "source_name": "vertexaisearch.cloud.google.com",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1GYPNRIbE-JZVFExBCMHY6Ak2G6ewjkbkwWSg6faaiIXW2MRtzHhlusWz55eanhYYjhaJO6uIV9ETCA44qLKbEIwJ8I88TuvxD8VJQLRqGqXinw-vIbxmpEgU3SAurRUcYERERUicR05CrnXIV2ckf3JiZ-SFaq2i6zes-KeY79CSkro3ZFqAf23__uX_63BRT7laQqDyViv0tmPvMge5cEMWaIatPEFDHb32NxSB-3XB_eohcwXXMd2G0A-URDoKLznz6cR9vSAe7sJgyHx1",
+        "usage_reason": "DPDP Act"
+      },
+      {
+        "source_type": "news",
+        "title": "Indian Fintech to Enter 2026 as AI and Compliance Take Center Stage",
+        "source_name": "Entrepreneur",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvZt_eygHIDDl7eeZnpulzOmOkuIvYNBElfWys98M2MJuXJ5zpuL4Urgr_AnrqSyXP9ssTAWsicEamrtBwp809G9H4sf9gu2pwWIUaHWO1bWEXNEpVb7If_rkGRHqHg09arVEMDS-NMk56XaYb6pYXKorgxM21WIGbJ3z8drN-o1Abj0Y875kLLeYq7jkABh9VVHq8BY-PBcqXG30WoFmcvcOUsGgFT2CKCQs=",
+        "usage_reason": "fintech"
+      },
+      {
+        "source_type": "news",
+        "title": "Compliance Automation for Indian Fintechs",
+        "source_name": "vertexaisearch.cloud.google.com",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEo1GOmBNYuut86qDNVLSzQov6dAlPkgBiUu1Nf3NYwpVryI9IJUs0AzFHKgN9sj7IyrmGYIBMw0icpFDgKyRmRFIXAJBA1Y0MNTNHRHLKGfPOEFaai-iLkeTu2N98NbpItHryf6mQxiatny2SxE5PbPpL_evh2OMkdpA==",
+        "usage_reason": "fintech"
+      },
+      {
+        "source_type": "news",
+        "title": "Peak XV backs Indian wealthtech firm PowerUp Money in $12m round",
+        "source_name": "Tech in Asia",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCteQqsxbCPdec-LN2aRSxmnLMY_HuwiPDwFZEtVXG2tXbaD49fWsZqtpPthx-VCj6gr7aRlfZguGzBrgqivg5Ub9anYHWKNK8DxKX1asb30ZsBYtsDMVVWp8ZipngMIDLnaRYlPPZaNswRwW4RAYCo2-CKYby4DmmtRl1SwAlogEIHtxGT0tAyEDvhNmOTqD47Jt4Ag==",
+        "usage_reason": "funding"
+      },
+      {
+        "source_type": "news",
+        "title": "The Impact of India's New Digital Personal Data Protection Rules",
+        "source_name": "Privacy World",
+        "year": "2025",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZUgZwXGCQXOUHg4aT6WyYpkLTr6TCtN7u28mNZYVQTTxy9PpisFq1CDX1bvYGrasVMT_PNZ6m3tTfLHp7dgdylP8czBLLAndQiAxtgl6lEs6wr-5PAkTSD5ihX_wrghfuCkaHg48HVug1myvuaoOcw4g8A69ostwZ1iFhrWR4yp3qmLGHKAqMqyt5NvHH3lXeZ4UT5Ax9hYPc81wqolqxvg==",
+        "usage_reason": "DPDP Act"
+      }
+    ],
+    "created_at": "2025-12-26T04:26:28.303684Z",
+    "metadata": {
+      "language": "hi",
+      "engine_version": "1.0.0-rag-decision-centric",
+      "evidence_count": 7,
+      "sector": "Financial Services & FinTech",
+      "stage": "Series C+",
+      "geography": "India - Metro Cities",
+      "raw_support_ratio": 0.4
+    }
   }
 ]

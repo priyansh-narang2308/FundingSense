@@ -13,13 +13,38 @@ ANALYSES_FILE = DATA_DIR / "analyses.json"
 class Storage:
     def __init__(self):
         self.analyses_file = ANALYSES_FILE
+        self.chat_history_file = DATA_DIR / "chat_history.json"
         self._ensure_data_dir()
         self.analyses: List[AnalysisResponse] = self._load_analyses()
+        self.chat_sessions: Dict[str, List[Dict]] = self._load_chat_history()
 
     def _ensure_data_dir(self):
         DATA_DIR.mkdir(exist_ok=True)
         if not self.analyses_file.exists():
             self.analyses_file.write_text("[]")
+        if not self.chat_history_file.exists():
+            self.chat_history_file.write_text("{}")
+
+    def _load_chat_history(self) -> Dict[str, List[Dict]]:
+        try:
+            with self.chat_history_file.open("r") as f:
+                return json.load(f)
+        except Exception as e:
+            print("Failed to load chat history:", e)
+            return {}
+
+    def save_chat_message(self, user_id: str, message: Dict):
+        if user_id not in self.chat_sessions:
+            self.chat_sessions[user_id] = []
+        self.chat_sessions[user_id].append(message)
+        self._persist_chats()
+
+    def get_chat_history(self, user_id: str) -> List[Dict]:
+        return self.chat_sessions.get(user_id, [])
+
+    def _persist_chats(self):
+        with self.chat_history_file.open("w") as f:
+            json.dump(self.chat_sessions, f, indent=2)
 
     def _load_analyses(self) -> List[AnalysisResponse]:
         try:
